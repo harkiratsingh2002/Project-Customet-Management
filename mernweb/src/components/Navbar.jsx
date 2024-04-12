@@ -11,6 +11,7 @@ const Navbar = () => {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <a class="navbar-brand fw-bolder fs-4 mx-auto " href="#">Japanese Car Sales</a>
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -27,7 +28,7 @@ const Navbar = () => {
 
 
                         </ul>
-                        <a class="navbar-brand fw-bolder fs-4 mx-auto " href="#">Company name</a>
+
                         <a href="#/login"><button className="btn btn-outline-primary ms-auto px-4 rounded-pill LogIn">
 
                             <i className="fa fa-sign-in me-2"></i>Login</button></a>
