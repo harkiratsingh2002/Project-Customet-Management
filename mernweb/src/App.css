@@ -1,0 +1,6 @@
+/* Home */
+#home {
+    background: rgb(100, 95, 222);
+    background: linear-gradient(90deg, rgb(100, 95, 222) 50%, #bfe5fc 100%);
+    min-height: 500px;
+}
