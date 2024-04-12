@@ -33,3 +33,7 @@ body {
 .text {
     color: white !important;
 }
+
+#passwordHelpBlock {
+    color: white !important;
+}
