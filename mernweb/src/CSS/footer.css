@@ -1,0 +1,23 @@
+.text-white.text-center.text-lg-start {
+    background-color: #23242a
+}
+
+.form-label {
+    margin-left: 0px
+}
+
+.form-notch-leading {
+    width: 9px;
+}
+
+.form-notch-middle {
+    width: 48.8px;
+}
+
+.fa-ul {
+    margin-left: 1.65em;
+}
+
+.text-center.p-3 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
