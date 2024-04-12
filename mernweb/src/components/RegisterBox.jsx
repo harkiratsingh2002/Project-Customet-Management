@@ -1,7 +1,22 @@
 import React from "react";
 import '../CSS/register.css';
+import axios from "axios";
+import { useState } from "react";
 
 const RegisterBox = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    async function submit(e) {
+        e.preventDefault();
+        try {
+            await axios.post("http://localhost:3000/#/RegisterPage", email, password)
+        }
+        catch (e) {
+            console.log(e)
+
+        }
+    }
     return (
         <section class="h-100 h-custom gradient-custom-2">
             <div class="container py-5 h-100">
@@ -45,17 +60,20 @@ const RegisterBox = () => {
 
                                             <div class="mb-4 pb-2">
                                                 <div data-mdb-input-init class="form-outline">
-                                                    <input type="text" id="form3Examplev4" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Examplev4">Position</label>
+                                                    <input type="email" onChange={(e) => { setEmail(e.target.value) }} class="form-control" name="email" id="email" placeholder="name@example.com" required />
+
+                                                    <label for="email" class="form-label 001 ">Email <span class="text-danger">*</span></label>
                                                 </div>
                                             </div>
 
                                             <div class="row">
                                                 <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
 
-                                                    <div data-mdb-input-init class="form-outline">
-                                                        <input type="text" id="form3Examplev5" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="form3Examplev5">Age</label>
+
+                                                    <input type="password" onChange={(e) => { setPassword(e.target.value) }} class="form-control" name="password" id="password" value="" required />
+                                                    <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                                    <div id="passwordHelpBlock " class="form-text">
+                                                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                                                     </div>
 
                                                 </div>
@@ -129,8 +147,7 @@ const RegisterBox = () => {
 
                                             <div class="mb-4">
                                                 <div data-mdb-input-init class="form-outline form-white">
-                                                    <input type="text" id="form3Examplea9" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Examplea9">Your Email</label>
+
                                                 </div>
                                             </div>
 
