@@ -20,11 +20,11 @@ const LogInBox = () => {
                                     <div class="row gy-3 gy-md-4 overflow-hidden">
                                         <div class="col-12">
                                             <label for="email" class="form-label 001 ">Email <span class="text-danger">*</span></label>
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required />
+                                            <input type="email" onChange={(e) => { setEmail(e.target.value) }} class="form-control" name="email" id="email" placeholder="name@example.com" required />
                                         </div>
                                         <div class="col-12">
                                             <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
-                                            <input type="password" class="form-control" name="password" id="password" value="" required />
+                                            <input type="password" onChange={(e) => { setPassword(e.target.value) }} class="form-control" name="password" id="password" value="" required />
                                             <div id="passwordHelpBlock" class="form-text">
                                                 Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                                             </div>
