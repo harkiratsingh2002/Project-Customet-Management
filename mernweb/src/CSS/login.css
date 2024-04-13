@@ -34,6 +34,6 @@ body {
     color: white !important;
 }
 
-#passwordHelpBlock {
+.col-12.col-md-11.col-lg-8.col-xl-7.col-xxl-6 .form-text#passwordHelpBlock {
     color: white !important;
 }
