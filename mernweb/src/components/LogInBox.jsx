@@ -1,23 +1,6 @@
 import React from "react";
 import '../CSS/login.css';
-import axios from "axios";
-import { useState } from "react";
 const LogInBox = () => {
-
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    async function submit(e) {
-        e.preventDefault();
-        try {
-            await axios.post("http://localhost:3000/#/LogInPage", email, password)
-        }
-        catch (e) {
-            console.log(e)
-
-        }
-    }
-
     return (
         <div className="container">
             {/* <!-- Login 2 - Bootstrap Brain Component --> */}
@@ -56,7 +39,7 @@ const LogInBox = () => {
                                         </div>
                                         <div class="col-12">
                                             <div class="d-grid">
-                                                <button class="btn btn-lg btn-primary" type="submit" onClick={submit}>Log in now</button>
+                                                <button class="btn btn-lg btn-primary" type="submit">Log in now</button>
                                             </div>
                                         </div>
                                     </div>
