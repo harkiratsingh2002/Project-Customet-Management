@@ -55,10 +55,14 @@ const RegisterBox = () => {
 
                                             <div class="row">
                                                 <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
-
                                                     <div class="col-12">
                                                         <input type="password" class="form-control" name="password" id="password" required />
                                                         <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <input type="password" class="form-control" name="password" id="password" required />
+                                                        <label for="password" class="form-label">Confirm Password <span class="text-danger">*</span></label>
 
                                                         <div id="passwordHelpBlock" class="form-text">
                                                             <p>Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</p>
