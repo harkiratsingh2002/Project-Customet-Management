@@ -45,17 +45,24 @@ const RegisterBox = () => {
 
                                             <div class="mb-4 pb-2">
                                                 <div data-mdb-input-init class="form-outline">
-                                                    <input type="text" id="form3Examplev4" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Examplev4">Position</label>
+                                                    <div class="col-12">
+                                                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required />
+                                                        <label for="email" class="form-label 001 ">Email <span class="text-danger">*</span></label>
+
+                                                    </div>
                                                 </div>
                                             </div>
 
                                             <div class="row">
                                                 <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
 
-                                                    <div data-mdb-input-init class="form-outline">
-                                                        <input type="text" id="form3Examplev5" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="form3Examplev5">Age</label>
+                                                    <div class="col-12">
+                                                        <input type="password" class="form-control" name="password" id="password" required />
+                                                        <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+
+                                                        <div id="passwordHelpBlock" class="form-text">
+                                                            <p>Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</p>
+                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -127,12 +134,7 @@ const RegisterBox = () => {
                                                 </div>
                                             </div>
 
-                                            <div class="mb-4">
-                                                <div data-mdb-input-init class="form-outline form-white">
-                                                    <input type="text" id="form3Examplea9" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Examplea9">Your Email</label>
-                                                </div>
-                                            </div>
+
 
                                             <div class="form-check d-flex justify-content-start mb-4 pb-3">
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />

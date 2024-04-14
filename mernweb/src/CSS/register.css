@@ -40,6 +40,11 @@
     color: #4835d4;
 }
 
+#passwordHelpBlock p {
+
+    color: black !important;
+}
+
 @media (min-width: 992px) {
     .card-registration-2 .bg-indigo {
         border-top-right-radius: 15px;
