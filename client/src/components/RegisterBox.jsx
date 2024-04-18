@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import '../CSS/register.css';
+
+
 
 const RegisterBox = () => {
     return (
