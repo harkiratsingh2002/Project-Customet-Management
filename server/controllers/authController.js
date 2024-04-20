@@ -1,4 +1,5 @@
 const User = require('../models/user')
+const { hashPassword, confirmPassword } = require('../helpers/auth')
 
 
 const test = (req, res) => {
@@ -47,6 +48,8 @@ const registerUser = async (req, res) => {
                 error: 'Last Name is required'
             })
         }
+        const hashedPassword = await hashPassword(password);
+
         //register the user
 
         const user = await User.create({
@@ -54,7 +57,7 @@ const registerUser = async (req, res) => {
             firstName,
             lastName,
             email,
-            password,
+            password: hashedPassword,
             streetNumber,
             streetName,
             zipCode,
