@@ -18,6 +18,7 @@ export function Landing() {
                                         Feels the Fress Business Perspective
                                     </h1>
                                     <p className="lead text-center fs-4 mb-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi sit, illo velit quisquam corrupti iure quos odio mollitia sint quod?</p>
+                                    <p className="lead text-center fs-4 mb-5 text-white">This text was added by abhi</p>
                                     <div className="buttons d-flex justify-content-center">
                                         <button className="btn btn-light me-4 rounded-pill px-4 py-2">
                                             Get Quote
