@@ -1,0 +1,19 @@
+.img-opacity {
+    opacity: 1;
+
+}
+
+.text-color-light {
+    color: #f5f2f2 !important;
+}
+
+.searchBar {
+    max-width: 80% !important;
+}
+
+.card.rounded-pill {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
