@@ -1,6 +1,4 @@
-.navbar-custom {
-    height: 13%;
-    /* Set to desired width */
-    margin: 0 auto;
-    /* Center the navbar if needed */
+.bg-custom {
+    background-color: #aec6cf;
+
 }

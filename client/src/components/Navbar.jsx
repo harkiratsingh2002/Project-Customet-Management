@@ -6,57 +6,46 @@ import logo from '../images/logo.png';
 
 const Navbar = () => {
     return (
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light shadow pt-0 pb-0 navbar-custom sticky-top ">
-                <div class="container-fluid  pe-0 ps-0">
+        <nav class="navbar navbar-expand-lg  mt-0 pt-0 pb-0 " >
+            <div class="container-fluid ">
 
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <div className="navbar-brand me-0">
-                            <a href="#" class="navbar-brand"><img src={logo} alt="" width={120} height={110} /></a>
-                        </div>
-=======
-                        <div>
-                            <a class="navbar-brand" href="#">
-                                <img src="/logo.png" alt="" width="0" height="24" class="d-inline-block align-text-top" />
-
+                <a class="navbar-brand col-4" href="#"><img src={logo} alt="" height={70} /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fw-bold " id="navbarNavDropdown">
+                    <ul class="navbar-nav col-8">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashoard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">All Vehicles</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
                             </a>
-                        </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#/contact">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">Our Story</a></li>
 
-
-
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#/vehicles">Vehicles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#/about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#/contact">Contact</a>
-                            </li>
-
-
-                        </ul>
-
-
-
-
-                        <a class="me-3" href="#/login"><button type="button" class="btn btn-outline-secondary">Log In</button></a>
-                        <a class="me-3" href="#/register"><button type="button" class="btn btn-outline-secondary">Register</button></a>
-
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="col">
+                        <a href="#/login"><button type="button" class="btn btn-dark me-3  ">Log In</button></a>
+                        <a href="#/register"><button type="button" class="btn btn-dark me-3 ">Sign In</button></a>
                     </div>
                 </div>
-            </nav>
-        </div>
+
+            </div>
+
+
+        </nav >
     );
 }
 export default Navbar;

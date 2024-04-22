@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 
 
 import Footer from "../components/footer";
+import bgImage1 from '../images/car-home-bg.jpg';
 
 export function Landing() {
     return (
@@ -10,25 +11,13 @@ export function Landing() {
         <><div> <Navbar /> </div>
             <div className="body">
                 <div>
-                    <section id="home">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-md-8 mt-5">
-                                    <h1 className="display-4 fw-bolder mb-4 text-center text-white">
-                                        Feels the Fress Business Perspective
-                                    </h1>
+                    <section id="home" className="bg">
 
-                                    <p className="lead text-center fs-4 mb-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi sit, illo velit quisquam corrupti iure quos odio mollitia sint quod?</p>
-                                    <p className="lead text-center fs-4 mb-5 text-white">This text was added by abhi</p>
-                                    <div className="buttons d-flex justify-content-center">
-                                        <button className="btn btn-light me-4 rounded-pill px-4 py-2">
-                                            Get Quote
-                                        </button>
-                                        <button className="btn btn-outline-light rounded-pill px-4 py-2">
-                                            Our Services
-                                        </button>
-                                    </div>
-                                </div>
+                        <div class="card text-bg-light">
+                            <img src={bgImage1} class="img-fluid" alt="White Honda CRV car parked in a scenic location with white snow covered mountains in the background" />                                <div class="card-img-overlay">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                     </section>

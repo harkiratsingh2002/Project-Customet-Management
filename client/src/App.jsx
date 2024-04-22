@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Toaster, toaster } from 'react-hot-toast';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import 'bootstrap/dist/js/bootstrap.bundle.min'
+
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Landing } from './Pages/LandingPage.jsx';
 import { About } from './Pages/AboutPage.jsx';
