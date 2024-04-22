@@ -1,11 +1,9 @@
 import React from "react";
-<<<<<<< Updated upstream
+
 import '../CSS/Navbar.css'
 import logo from '../images/logo.png';
-=======
 
 
->>>>>>> Stashed changes
 const Navbar = () => {
     return (
         <div>
@@ -17,7 +15,7 @@ const Navbar = () => {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<<<<<<< Updated upstream
+
                         <div className="navbar-brand me-0">
                             <a href="#" class="navbar-brand"><img src={logo} alt="" width={120} height={110} /></a>
                         </div>
@@ -30,7 +28,7 @@ const Navbar = () => {
                         </div>
 
 
->>>>>>> Stashed changes
+
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                             <li class="nav-item">
@@ -48,11 +46,9 @@ const Navbar = () => {
 
 
                         </ul>
-<<<<<<< Updated upstream
-=======
 
-                        <a href="#/login"><button className="btn btn-outline-primary ms-auto px-4 rounded-pill LogIn">
->>>>>>> Stashed changes
+
+
 
                         <a class="me-3" href="#/login"><button type="button" class="btn btn-outline-secondary">Log In</button></a>
                         <a class="me-3" href="#/register"><button type="button" class="btn btn-outline-secondary">Register</button></a>
