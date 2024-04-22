@@ -2,3 +2,15 @@
     background-color: #aec6cf;
 
 }
+
+.dark-text {
+    color: #1b3142;
+}
+
+.light-text {
+    color: white;
+}
+
+.dark-bg {
+    background-color: #1b3142;
+}
