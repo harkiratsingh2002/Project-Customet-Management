@@ -10,7 +10,7 @@ const test = (req, res) => {
 
 const registerUser = async (req, res) => {
     try {
-        const { name, email, password, lastName, firstName, streetNumber, streetName, zipCode, suburb, country, countryCode, phoneNumber, agreeToTerms } = req.body;
+        const { name, email, password, lastName, firstName, confirmPassword } = req.body;
         //check if name was entered
         if (!lastName) {
             return res.json({
@@ -33,23 +33,7 @@ const registerUser = async (req, res) => {
                 error: 'Email already exists'
             })
         }
-        const phoneNumberexist = await User.findOne({ phoneNumber });
-        if (phoneNumberexist) {
-            return res.json({
-                error: 'Phone Number already exists'
-            })
-        }
 
-        if (agreeToTerms === false) {
-            return res.json({
-                error: 'Please agree to the terms and conditions'
-            })
-        }
-        if (!firstName) {
-            return res.json({
-                error: 'Last Name is required'
-            })
-        }
         const hashedPassword = await hashPassword(password);
 
         //register the user
@@ -60,14 +44,7 @@ const registerUser = async (req, res) => {
             lastName,
             email,
             password: hashedPassword,
-            streetNumber,
-            streetName,
-            zipCode,
-            suburb,
-            country,
-            countryCode,
-            phoneNumber,
-            agreeToTerms
+
         });
 
 
