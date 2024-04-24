@@ -5,6 +5,8 @@ import '../CSS/LandingPage.css'
 
 import Footer from "../components/footer";
 import bgImage1 from '../images/car-home-bg.jpeg';
+import bgImage2 from '../images/car-home-bg-2.png';
+import bgImage3 from '../images/car-home-bg-3.jpeg';
 
 export function Landing() {
     return (
@@ -15,10 +17,11 @@ export function Landing() {
                     <section id="home" className="bg ">
 
                         <div class="card fluid text-bg-light ">
-                            <img src={bgImage1} class=" card-img img-fluid" alt="White car camped in an open field at night with an attached tent and fancy lights" />
+                            <img src={bgImage3} class=" card-img img-fluid" alt="White car camped in an open field at night with an attached tent and fancy lights" />
                             <div class="card-img-overlay text-center">
-                                <h1 class="card-title display-1 fw-bold text-color-light">Get your Dream Car Today!</h1>
-                                <h2 class="card-text  fw-bold text-color-light">Discover Top-Notch New and Pre-Owned Japanese Cars at Unbeatable Prices!</h2>
+                                <h1 class="card-title display-1 fw-bolder  text-color-light">Get your Dream Car Today!</h1>
+                                <h2 class="card-text  text-color-light">Discover Top-Notch New and Pre-Owned Japanese Cars at Unbeatable Prices!</h2>
+                                <h5 class="card-text fst-italic text-color-light">See our <a href="#/vehicles" class="text-color-light">car collection</a> to view all</h5>
 
 
                                 <div className=" d-md-none">
@@ -82,7 +85,6 @@ export function Landing() {
                                         </div>
                                     </div>
                                 </form>
-                                <h5 class="card-text fst-italic text-color-light">See our <a href="#/vehicles" class="text-color-light">car collection</a> to view all</h5>
                             </div>
                         </div>
 

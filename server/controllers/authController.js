@@ -1,6 +1,11 @@
 const User = require('../models/user')
+const express = require('express');
+
 const { hashPassword, comparePassword, confirmPassword } = require('../helpers/auth')
 const jwt = require('jsonwebtoken');
+const app = express();
+const nodemailer = require('nodemailer');
+const router = express.Router();
 
 
 
@@ -107,6 +112,7 @@ const getProfile = (req, res) => {
     }
 
 }
+// forgot password
 
 module.exports = {
     test,

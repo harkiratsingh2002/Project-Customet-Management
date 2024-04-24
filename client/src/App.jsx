@@ -14,7 +14,7 @@ import { LogInPage } from './Pages/LogInPage.jsx';
 import { RegisterPage } from './Pages/RegisterPage.jsx';
 import { UserContextProvider } from './context/userContext.jsx';
 import { Dashboard } from './Pages/Dashboard.jsx';
-import { forgotPassword } from './Pages/forgotPassword.jsx'
+import ForgotPassword from './Pages/ForgotPassword.jsx';
 
 axios.defaults.baseURL = 'http://localhost:8000';
 axios.defaults.withCredentials = true;
@@ -36,7 +36,7 @@ function App() {
         <Route exact path="/login" element={<LogInPage />} />
         <Route exact path="/register" element={<RegisterPage />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
-        <Route exact path='/forgotPassword' element={<forgotPassword />} />
+        <Route exact path="/ForgotPassword" element={<ForgotPassword />} />
 
       </Routes>
     </UserContextProvider>

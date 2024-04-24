@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 
-
+// bcrypt package is used to hash the password
 const hashPassword = (password) => {
     return new Promise((resolve, reject) => {
         bcrypt.genSalt(12, (err, salt) => {
@@ -17,6 +17,7 @@ const hashPassword = (password) => {
     })
 }
 
+//password is compared with the hashed password uing compare function of bcrypt package
 const comparePassword = (password, hashed) => {
     return bcrypt.compare(password, hashed)
 }

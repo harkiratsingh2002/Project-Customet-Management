@@ -2,8 +2,15 @@ const express = require('express');
 const dotenv = require('dotenv').config()
 const cors = require('cors')
 const { mongoose } = require('mongoose')
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
+
 const app = express();
+
+
+app.use(cors({
+    credentials: true,
+    origin: 'http://localhost:3000'
+}))
 
 
 // databse connection 
@@ -17,6 +24,8 @@ mongoose.connect(process.env.MONGO_URL)
 app.use(express.json())
 app.use(cookieParser())
 app.use(express.urlencoded({ extended: false }))
+
+
 
 
 
