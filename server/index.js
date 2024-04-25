@@ -30,7 +30,8 @@ app.use(express.urlencoded({ extended: true }))
 
 
 app.use('/', require('./Routes/authRoutes'))
-app.use('/', require('./Routes/contactRoutes'))
+app.use("/#/contact", require("./Routes/contact-router"))
+
 
 
 const port = 8000;
