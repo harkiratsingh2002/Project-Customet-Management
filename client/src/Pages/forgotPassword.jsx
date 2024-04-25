@@ -14,7 +14,7 @@ export default function ForgotPassword() {
     const navigate = useNavigate()
 
     const [email, setEmail] = useState()
-    cont[Otp, setOTP] = useState()
+    const [Otp, setOTP] = useState()
 
     const handleSubmit = (e) => {
         e.preventDefault()

@@ -3,14 +3,13 @@ const dotenv = require('dotenv').config()
 const cors = require('cors')
 const { mongoose } = require('mongoose')
 const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
 const app = express();
 
 
-app.use(cors({
-    credentials: true,
-    origin: 'http://localhost:3000'
-}))
+
+
 
 
 // databse connection 
@@ -23,13 +22,15 @@ mongoose.connect(process.env.MONGO_URL)
 //middleware
 app.use(express.json())
 app.use(cookieParser())
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: true }))
+
 
 
 
 
 
 app.use('/', require('./Routes/authRoutes'))
+app.use('/', require('./Routes/contactRoutes'))
 
 
 const port = 8000;

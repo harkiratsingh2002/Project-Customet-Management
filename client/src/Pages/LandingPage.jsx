@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import '../CSS/LandingPage.css'
+import { Footer } from "../components/Footer";
 
 
-import Footer from "../components/footer";
 import bgImage1 from '../images/car-home-bg.jpeg';
 import bgImage2 from '../images/car-home-bg-2.png';
 import bgImage3 from '../images/car-home-bg-3.jpeg';
