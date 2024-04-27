@@ -265,7 +265,7 @@ export function Landing() {
                                             <p class="card-text">Plug-In Hybrid 2.0L SUV 4WD Hybrid</p>
                                             <p class="card-text">$33,650</p>
                                             <p class="card-text"><small class="text-muted">10 km | Hybrid | Sports Automatic | QLD</small></p>
-                                            <a href="#" class="btn btn-primary me-2">View car</a>
+                                            <a href="#/vehicles/2022-nissan-xtrail" class="btn btn-primary me-2">View car</a>
                                             <a href="#" class="btn btn-outline-primary">Enquire now</a>
                                         </div>
                                     </div>
