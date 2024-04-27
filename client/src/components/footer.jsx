@@ -18,16 +18,16 @@ export function Footer() {
 
                                 <ul class="list-unstyled mb-4 ">
                                     <li>
-                                        <a href="#!" class="text-white  text-decoration-none">About us</a>
+                                        <a href="#!" class="text-white  text-decoration-none">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white  text-decoration-none">Collections</a>
+                                        <a href="#!" class="text-white  text-decoration-none">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white  text-decoration-none">Environmental philosophy</a>
+                                        <a href="#!" class="text-white  text-decoration-none">Reviews</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white  text-decoration-none">Artist collaborations</a>
+                                        <a href="#!" class="text-white  text-decoration-none">Our Team</a>
                                     </li>
                                 </ul>
                             </div>
@@ -42,16 +42,16 @@ export function Footer() {
                                         <a href="#!" class="text-white  text-decoration-none">Contact us</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white  text-decoration-none">Size Guide</a>
+                                        <a href="#!" class="text-white  text-decoration-none">Car Advice</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white  text-decoration-none">Shipping Information</a>
+                                        <a href="#!" class="text-white  text-decoration-none">Finance </a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white  text-decoration-none">Returns & Exchanges</a>
+                                        <a href="#!" class="text-white  text-decoration-none">Family Car</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white  text-decoration-none">Payment</a>
+                                        <a href="#!" class="text-white  text-decoration-none">First Car</a>
                                     </li>
                                 </ul>
                             </div>
