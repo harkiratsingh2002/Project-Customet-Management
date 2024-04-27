@@ -15,6 +15,7 @@ import { RegisterPage } from './Pages/RegisterPage.jsx';
 import { UserContextProvider } from './context/userContext.jsx';
 import { Dashboard } from './Pages/Dashboard.jsx';
 import ForgotPassword from './Pages/ForgotPassword.jsx';
+import CarInfo from './Pages/viewCarInfo.jsx'
 
 axios.defaults.baseURL = 'http://localhost:8000';
 axios.defaults.withCredentials = true;
@@ -37,6 +38,7 @@ function App() {
         <Route exact path="/register" element={<RegisterPage />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
         <Route exact path="/ForgotPassword" element={<ForgotPassword />} />
+        <Route exact path="/vehicles/2022-nissan-xtrail" element={<CarInfo />} />
 
       </Routes>
     </UserContextProvider>

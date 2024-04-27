@@ -17,3 +17,16 @@
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
+
+.background {
+    background-color: #f5f2f2 !important;
+}
+
+.carousel-label {
+    color: black;
+    /* Set the color of the labels */
+    font-size: 3rem;
+    /* Optional: Adjust the size as needed */
+    font-weight: bolder;
+    /* Optional: Make the labels bold */
+}
