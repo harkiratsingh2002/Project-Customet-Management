@@ -9,7 +9,7 @@ import LoginPageImg from "../images/login-page-img.jpg"
 
 
 
-export function LogInPage() {
+export function AdminLogInPage() {
 
     const navigate = useNavigate()
     const [data, setData] = useState({
@@ -60,7 +60,7 @@ export function LogInPage() {
                                                                         <img src={logo} alt="BootstrapBrain Logo" width="150" height="100" />
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="text-center">Welcome back you've been missed!</h4>
+                                                                <h4 class="text-center">Admin Log In Here</h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -113,9 +113,9 @@ export function LogInPage() {
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-center mt-5">
-                                                                <a href="#!" class="link-secondary text-decoration-none">Create new account</a>
-                                                                <a href="#/ForgotPassword" class="link-secondary text-decoration-none">Forgot password</a>
+                                                                <a href="#/login" class="link-secondary text-decoration-none">Customer Log In</a>
                                                                 <a href="#/staffLogIn" class="link-secondary text-decoration-none">Staff Log In</a>
+                                                                <a href="#/ForgotPassword" class="link-secondary text-decoration-none">Forgot password</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -132,4 +132,4 @@ export function LogInPage() {
     );
 }
 
-export default LogInPage;
+export default AdminLogInPage;

@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import ForgotImg from '../images/forgot-password.jpg'
 
 
 
@@ -32,7 +33,7 @@ export default function ForgotPassword() {
                                 <div class="mb-5">
                                     <div class="text-center mb-4">
                                         <a href="#!">
-                                            <img src="./assets/img/bsb-logo.svg" alt="BootstrapBrain Logo" width="175" height="57" />
+                                            <img src={ForgotImg} alt="BootstrapBrain Logo" width="400" height="400" />
                                         </a>
                                     </div>
                                     <h4 class="text-center mb-4">Password Reset</h4>

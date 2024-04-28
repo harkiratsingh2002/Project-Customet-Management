@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
-
+import signupImg from '../images/signup-img.jpg';
 
 export function RegisterPage() {
     const navigate = useNavigate();
@@ -55,10 +55,11 @@ export function RegisterPage() {
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 bsb-tpl-bg-platinum">
-                            <div class="d-flex flex-column justify-content-between h-100 p-3 p-md-4 p-xl-5">
+                            <div class=" justify-content-between h-100 p-3 p-md-4 p-xl-5">
                                 <h3 class="m-0">Welcome!</h3>
-                                <img class="img-fluid rounded mx-auto my-4" loading="lazy" src="./assets/img/bsb-logo.svg" width="245" height="80" alt="BootstrapBrain Logo" />
-                                <p class="mb-0">Not a member yet? <a href="#!" class="link-secondary text-decoration-none">Register now</a></p>
+                                <div className="ps-5 pt-5">
+                                    <img class="img-fluid rounded ms-5 mt-5" loading="lazy" src={signupImg} width="245" height="80" alt="BootstrapBrain Logo" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 bsb-tpl-bg-lotion">
