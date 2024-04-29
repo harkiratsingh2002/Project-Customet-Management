@@ -1,11 +1,16 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import axios from "axios";
+import { toast } from 'react-hot-toast';
 
 
 
 export function Contact() {
+    const navigate = useNavigate();
+
     const [data, setData] = useState({
         name: "",
         email: "",
@@ -18,6 +23,7 @@ export function Contact() {
         const { name, email, phoneNumber, subject, message } = data
         try {
             const { data } = await axios.post('/contact', { name, email, phoneNumber, subject, message })
+
         } catch (error) {
             console.log(error)
         }
