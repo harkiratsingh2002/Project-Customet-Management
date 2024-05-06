@@ -62,7 +62,7 @@ export function Landing() {
                                 </h5>
 
                                 <div className=" d-lg-none">
-                                    <button>Search Cars</button>
+                                    <button>Search Car</button>
                                 </div>
 
                                 <form action="#">
