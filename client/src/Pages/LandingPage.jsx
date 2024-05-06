@@ -45,8 +45,6 @@ export function Landing() {
                                 class=" card-img img-fluid"
                                 height={370} alt="White car camped in an open field at night with an attached tent and fancy lights"
                             />
-
-                            {/* Hi this is change 1  */}
                             <div class="card-img-overlay text-center">
                                 <h1 class="card-title display-1 fw-bolder  text-color-light">
                                     Get your Dream Car Today!
@@ -62,8 +60,6 @@ export function Landing() {
                                     </a>{" "}
                                     to view all
                                 </h5>
-                                                            {/* Hi this is change 2  */}
-
 
                                 <div className=" d-lg-none">
                                     <button>Search Cars</button>
