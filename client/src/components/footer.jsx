@@ -12,7 +12,7 @@ export function Footer() {
                     <div class="container p-4">
                         {/* <!--Grid row--> */}
                         <div class="row">
-                            {/* <!--Grid column--> */}
+                            {/* <!--Grid column--> */};
                             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ">
                                 <h5 class="text-uppercase mb-4 text-white">OUR WORLD</h5>
 
