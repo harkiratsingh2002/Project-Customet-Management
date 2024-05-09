@@ -23,7 +23,7 @@ import citreonC5 from "../images/citreon.jpg"
 import fordPuma from "../images/ford-puma.jpg"
 import nissanPatrolWarrior from "../images/nissan-patrol-warrior.jpg"
 import toyotaKluger from "../images/toyota-kluger.jpg"
-import suzukiSwift from "../images/suzuki-swift.jpg"
+import suzukiSwift from "../images/suzuki-swift.jpg";
 
 
 export function Landing() {
