@@ -72,7 +72,7 @@ export function LogInPage() {
                                                             <div className="fluid">
 
 
-                                                                <GoogleLogin class="align-items-center justify-content-center"
+                                                                <GoogleLogin
                                                                     onSuccess={credentialResponse => {
                                                                         var credentialsResponseDecoded = jwt_decode(credentialResponse.credential);
                                                                         console.log(credentialsResponseDecoded);
